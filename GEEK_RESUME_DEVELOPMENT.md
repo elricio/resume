@@ -269,7 +269,7 @@ export interface Profile {
 }
 
 export const profile: Profile = {
-  name: "李宜其",
+  name: "Elric",
   title: "高级前端工程师",
   avatar: "/images/avatar.jpg",
   location: "北京",
@@ -1459,7 +1459,7 @@ test.describe('Homepage', () => {
     await page.goto('/');
 
     // 检查标题
-    await expect(page.getByRole('heading', { name: '李宜其' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Elric' })).toBeVisible();
 
     // 检查技能区域
     await page.getByRole('link', { name: '技术栈' }).click();

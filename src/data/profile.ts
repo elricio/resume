@@ -4,7 +4,7 @@
 import type { Profile } from '@/utils/types';
 
 export const profile: Profile = {
-  name: '李宜其',
+  name: 'Elric',
   title: '高级前端工程师',
   avatar: '/src/assets/images/avatar.svg',
   location: '北京',

@@ -20,7 +20,7 @@
 */
 
 var userInfo = {
-    userName: "李宜其" , 
+    userName: "Elric" , 
     userPortrait:"images/icon/header.jpg",
     jobWant:  "WEB前端开发工程师",
     userQQ:  "1318245851",
