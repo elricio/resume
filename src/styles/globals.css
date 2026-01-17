@@ -1,0 +1,230 @@
+/**
+ * 全局样式
+ */
+@import "tailwindcss";
+
+/* 导入字体 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* 基础样式 */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-950 text-slate-200 font-sans antialiased;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-700 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-600;
+}
+
+/* 选择文本样式 */
+::selection {
+  @apply bg-purple-600 text-white;
+}
+
+/* 链接样式 */
+a {
+  @apply transition-colors duration-200;
+}
+
+/* 标题样式 */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-display;
+}
+
+/* 代码样式 */
+code {
+  @apply font-mono text-sm;
+}
+
+/* 图片 */
+img {
+  @apply max-w-full h-auto;
+}
+
+/* 主题系统 */
+/* 深色主题 (默认) */
+:root,
+.theme-dark {
+  --bg-primary: #09090b;
+  --bg-secondary: #18181b;
+  --bg-tertiary: #27272a;
+  --border-color: #3f3f46;
+  --text-primary: #fafafa;
+  --text-secondary: #a1a1aa;
+  --text-tertiary: #71717a;
+  --accent-primary: #8b5cf6;
+  --accent-secondary: #0ea5e9;
+  --accent-glow: rgba(139, 92, 246, 0.3);
+}
+
+/* 自定义字体变量 */
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --font-display: 'Space Grotesk', 'Inter', sans-serif;
+  --color-glass-bg: rgba(15, 23, 42, 0.7);
+  --color-glass-border: rgba(148, 163, 184, 0.1);
+}
+
+/* 光明主题 */
+.theme-light {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f4f4f5;
+  --bg-tertiary: #e4e4e7;
+  --border-color: #d4d4d8;
+  --text-primary: #18181b;
+  --text-secondary: #52525b;
+  --text-tertiary: #71717a;
+  --accent-primary: #7c3aed;
+  --accent-secondary: #0284c7;
+  --accent-glow: rgba(124, 58, 237, 0.2);
+}
+
+/* Neon 主题 */
+.theme-neon {
+  --bg-primary: #000000;
+  --bg-secondary: #0a0a0a;
+  --bg-tertiary: #1a1a1a;
+  --border-color: #333333;
+  --text-primary: #ffffff;
+  --text-secondary: #888888;
+  --text-tertiary: #666666;
+  --accent-primary: #00ff88;
+  --accent-secondary: #ff00ff;
+  --accent-glow: rgba(0, 255, 136, 0.5);
+}
+
+/* 工具类 */
+/* 玻璃拟态 */
+.glass {
+  @apply bg-glass-bg backdrop-blur border border-glass-border;
+}
+
+/* 文本渐变 */
+.text-gradient {
+  @apply bg-clip-text text-transparent;
+}
+
+/* 霓虹文字 */
+.text-neon {
+  text-shadow: 0 0 10px var(--accent-primary), 0 0 20px var(--accent-primary);
+}
+
+/* 霓虹边框 */
+.border-neon {
+  box-shadow: 0 0 10px var(--accent-primary), inset 0 0 10px var(--accent-primary);
+}
+
+/* 容器 */
+.container {
+  @apply max-w-7xl mx-auto px-4;
+}
+
+/* 焦点样式 */
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-slate-950;
+}
+
+/* 隐藏但可访问 */
+.sr-only {
+  @apply absolute w-px h-px p-0 -m-px overflow-hidden border-0;
+  clip: rect(0, 0, 0, 0);
+}
+
+/* 动画类 */
+/* 淡入动画 */
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* 上浮动画 */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* 脉冲动画 */
+.animate-pulse-slow {
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* 关键帧动画 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* 响应式断点 */
+/* 隐藏滚动条但保持滚动 */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* 表单元素 */
+input,
+textarea,
+button,
+select {
+  @apply font-sans;
+}
+
+/* 自定义动画类 */
+/* 滚动进度条 */
+.scroll-progress-bar {
+  @apply fixed top-0 left-0 h-1 bg-gradient-to-r from-purple-500 to-blue-500 z-50;
+  transform-origin: left;
+}
+
+/* 霓虹按钮 */
+.btn-neon {
+  @apply relative overflow-hidden transition-all duration-300;
+}
+
+.btn-neon::before {
+  @apply absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 opacity-0 transition-opacity duration-300;
+  content: '';
+  z-index: -1;
+}
+
+.btn-neon:hover::before {
+  @apply opacity-100;
+}
+
+.btn-neon:hover {
+  @apply shadow-lg shadow-purple-500/50;
+}
