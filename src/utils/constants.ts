@@ -150,7 +150,7 @@ export const CONFIG = {
   SITE: {
     title: 'Geek Resume',
     description: '现代化前端工程师简历',
-    url: 'https://resume.eachlee.com',
+    url: 'https://resume.elricio.com',
   },
 
   // 性能预算 (bytes)
@@ -191,11 +191,11 @@ export const CONFIG = {
 
 // ==================== 社交链接 ====================
 export const SOCIAL_LINKS = {
-  github: 'https://github.com/eachlee',
-  email: 'mailto:eachli@163.com',
+  github: 'https://github.com/elricio',
+  email: 'mailto:elrico@163.com',
   linkedin: '',
   twitter: '',
-  website: 'https://eachlee.github.io',
+  website: 'https://elricio.github.io',
 } as const;
 
 // ==================== 导出配置 ====================

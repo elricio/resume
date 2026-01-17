@@ -40,7 +40,7 @@ export const Contact: React.FC = () => {
     {
       icon: <Github size={20} />,
       label: 'GitHub',
-      value: 'eachlee',
+      value: 'elricio',
       href: profile.github,
     },
   ];

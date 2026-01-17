@@ -15,7 +15,7 @@
 var projects = [
 	{
 		projectName: '微云网页版',
-		projectWebsite: 'https://eachlee.github.io/weiyun/',
+		projectWebsite: 'https://elricio.github.io/weiyun/',
 		startTime: '2016.05.06',
 		endTime: '至今',
 		projectExplain: 'JS整站开发之：大量的数据操作，和根据数据生成Dom，和数据的增删改查，包括文件夹修改 新建 重命名和移动....',
@@ -24,7 +24,7 @@ var projects = [
 	},
 	{
 		projectName: '百度浏览器7.0宣传页',
-		projectWebsite: 'https://eachlee.github.io/baidu-browser/',
+		projectWebsite: 'https://elricio.github.io/baidu-browser/',
 		startTime: '2016.05.06',
 		endTime: '至今',
 		projectExplain: '整屏滑动和一些css3动画的展现',
@@ -33,7 +33,7 @@ var projects = [
 	},
 	{
 		projectName: 'JQuery-web',
-		projectWebsite: 'https://eachlee.github.io/jQuery-web/',
+		projectWebsite: 'https://elricio.github.io/jQuery-web/',
 		startTime: '2016.05.06',
 		endTime: '至今',
 		projectExplain: '响应式设计 根据屏幕尺寸不同调整页面布局',
@@ -42,7 +42,7 @@ var projects = [
 	},
 	{
 		projectName: 'UEhtml 设计网站',
-		projectWebsite: 'https://eachlee.github.io/UEhtml/',
+		projectWebsite: 'https://elricio.github.io/UEhtml/',
 		startTime: '2016.05.06',
 		endTime: '至今',
 		projectExplain: '响应式设计 根据屏幕尺寸不同调整页面布局，以及一些css简单动画的展现',
@@ -51,7 +51,7 @@ var projects = [
 	},
 	{
 		projectName: '百度移动端首页',
-		projectWebsite: 'https://eachlee.github.io/Mbaidu/',
+		projectWebsite: 'https://elricio.github.io/Mbaidu/',
 		startTime: '2016.05.06',
 		endTime: '至今',
 		projectExplain: '移动端Rem布局',

@@ -159,6 +159,7 @@ export interface OptimizedImageProps {
   width: number;
   height: number;
   className?: string;
+  fallbackSrc?: string;
 }
 
 // ==================== 页面区块类型 ====================

@@ -24,7 +24,7 @@ var userInfo = {
     userPortrait:"images/icon/header.jpg",
     jobWant:  "WEB前端开发工程师",
     userQQ:  "1318245851",
-    userEmail:   "eachli@163.com",
+    userEmail:   "elrico@163.com",
     motto:  "躺下就永远不会再跌倒，可谁让我们都喜欢站着", 
     userPhone: 18810609069,
     userOrignPlace:  "河南省周口市" ,

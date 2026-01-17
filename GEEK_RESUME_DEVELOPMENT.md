@@ -273,16 +273,16 @@ export const profile: Profile = {
   title: "高级前端工程师",
   avatar: "/images/avatar.jpg",
   location: "北京",
-  email: "eachli@163.com",
+  email: "elrico@163.com",
   phone: "18810609069",
-  website: "https://eachlee.github.io",
-  github: "https://github.com/eachlee",
+  website: "https://elricio.github.io",
+  github: "https://github.com/elricio",
   linkedin: "",
   summary: "拥有多年前端开发经验，专注于高性能 Web 应用开发...",
   tagline: "Code is poetry, performance is art",
   socialLinks: [
-    { platform: "GitHub", url: "https://github.com/eachlee", icon: "github" },
-    { platform: "Email", url: "mailto:eachli@163.com", icon: "mail" },
+    { platform: "GitHub", url: "https://github.com/elricio", icon: "github" },
+    { platform: "Email", url: "mailto:elrico@163.com", icon: "mail" },
   ]
 };
 ```
@@ -426,8 +426,8 @@ export const projects: Project[] = [
   {
     name: "微云网页版",
     description: "基于原生 JavaScript 的云存储前端，支持文件夹管理、批量操作",
-    url: "https://eachlee.github.io/weiyun/",
-    github: "https://github.com/eachlee/weiyun",
+    url: "https://elricio.github.io/weiyun/",
+    github: "https://github.com/elricio/weiyun",
     startDate: "2016-05",
     endDate: "至今",
     technologies: ["JavaScript", "CSS3", "LocalStorage"],
@@ -458,14 +458,14 @@ export interface OpenSource {
 
 export const openSource: OpenSource[] = [
   {
-    repo: "eachlee/utils",
+    repo: "elricio/utils",
     description: "前端工具函数库，包含 100+ 常用函数",
     stars: 234,
     forks: 45,
     language: "TypeScript",
     topics: ["typescript", "utilities", "frontend"],
     contributions: 42,
-    url: "https://github.com/eachlee/utils"
+    url: "https://github.com/elricio/utils"
   }
 ];
 ```
@@ -1120,7 +1120,7 @@ export const Contact: React.FC = () => {
     { icon: <Phone size={20} />, label: 'Phone', value: profile.phone, href: `tel:${profile.phone}` },
     { icon: <MapPin size={20} />, label: 'Location', value: profile.location },
     { icon: <Globe size={20} />, label: 'Website', value: profile.website, href: profile.website },
-    { icon: <Github size={20} />, label: 'GitHub', value: 'eachlee', href: profile.github },
+    { icon: <Github size={20} />, label: 'GitHub', value: 'elricio', href: profile.github },
   ];
 
   return (
@@ -1600,7 +1600,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          cname: resume.eachlee.com
+          cname: resume.elricio.com
 ```
 
 ### 性能预算
@@ -1632,7 +1632,7 @@ jobs:
 
 ```bash
 # 克隆项目
-git clone https://github.com/eachlee/resume.git
+git clone https://github.com/elricio/resume.git
 cd resume
 
 # 安装依赖

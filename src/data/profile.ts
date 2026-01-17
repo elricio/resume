@@ -6,12 +6,12 @@ import type { Profile } from '@/utils/types';
 export const profile: Profile = {
   name: '李宜其',
   title: '高级前端工程师',
-  avatar: '/images/avatar.jpg',
+  avatar: '/src/assets/images/avatar.svg',
   location: '北京',
-  email: 'eachli@163.com',
+  email: 'elrico@163.com',
   phone: '18810609069',
-  website: 'https://eachlee.github.io',
-  github: 'https://github.com/eachlee',
+  website: 'https://elricio.github.io',
+  github: 'https://github.com/elricio',
   linkedin: '',
   summary: `拥有多年前端开发经验，专注于高性能 Web 应用开发。精通 JavaScript、TypeScript、React 等主流技术栈，具备扎实的计算机基础和丰富的工程化实践经验。
 
@@ -22,17 +22,17 @@ export const profile: Profile = {
   socialLinks: [
     {
       platform: 'GitHub',
-      url: 'https://github.com/eachlee',
+      url: 'https://github.com/elricio',
       icon: 'github'
     },
     {
       platform: 'Email',
-      url: 'mailto:eachli@163.com',
+      url: 'mailto:elrico@163.com',
       icon: 'mail'
     },
     {
       platform: 'Website',
-      url: 'https://eachlee.github.io',
+      url: 'https://elricio.github.io',
       icon: 'globe'
     }
   ]
