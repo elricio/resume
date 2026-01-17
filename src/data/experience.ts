@@ -6,7 +6,7 @@ import type { Experience } from '@/utils/types';
 export const experiences: Experience[] = [
   {
     company: '四翼鸟科技',
-    logo: '/images/companies/siyiniao.png',
+    logo: '/resume/src/assets/images/companies/siyiniao.png',
     position: '高级前端工程师',
     location: '北京',
     startDate: '2017-03',
@@ -35,7 +35,7 @@ export const experiences: Experience[] = [
   },
   {
     company: '北京易车网',
-    logo: '/images/companies/yiche.png',
+    logo: '/resume/src/assets/images/companies/yiche.png',
     position: '前端工程师',
     location: '北京',
     startDate: '2015-07',
@@ -58,7 +58,7 @@ export const experiences: Experience[] = [
   },
   {
     company: '北京博雅立方',
-    logo: '/images/companies/boyaa.png',
+    logo: '/resume/src/assets/images/companies/boyaa.png',
     position: '前端开发工程师',
     location: '北京',
     startDate: '2013-06',
