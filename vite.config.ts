@@ -6,6 +6,9 @@ import { resolve } from 'path';
 export default defineConfig({
   plugins: [react()],
 
+  // GitHub Pages 部署时需要配置 base 路径
+  base: '/resume/',
+
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
