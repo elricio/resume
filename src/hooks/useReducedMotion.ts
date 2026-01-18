@@ -33,7 +33,7 @@ export const useReducedMotion = (): boolean => {
 export const useMotionConfig = () => {
   const reducedMotion = useReducedMotion();
 
-  const getAnimationConfig = (config: any) => {
+  const getAnimationConfig = (config: Record<string, unknown>) => {
     if (reducedMotion) {
       // 减少动画模式下，使用简化的动画
       return {

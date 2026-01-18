@@ -170,13 +170,13 @@ export interface SectionProps {
 
 // ==================== 动画类型 ====================
 export interface AnimationConfig {
-  initial: any;
-  animate: any;
-  transition?: any;
+  initial: Record<string, unknown>;
+  animate: Record<string, unknown>;
+  transition?: Record<string, unknown>;
 }
 
 export interface StaggerContainerConfig {
-  hidden: any;
+  hidden: Record<string, unknown>;
   visible: {
     opacity: number;
     transition: {

@@ -45,7 +45,7 @@ export const Projects: React.FC = () => {
           {projectCategories.map((cat) => (
             <button
               key={cat.key}
-              onClick={() => setFilter(cat.key as any)}
+              onClick={() => setFilter(cat.key as 'all' | 'open-source' | 'work' | 'personal')}
               className={`px-5 py-2.5 rounded-full font-medium transition-all duration-300 ${
                 filter === cat.key
                   ? 'bg-blue-600 text-white shadow-lg shadow-blue-500/30 hover:bg-blue-500'

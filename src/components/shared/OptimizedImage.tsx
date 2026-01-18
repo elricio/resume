@@ -37,11 +37,21 @@ export const OptimizedImage: React.FC<OptimizedImageProps> = ({
     return generatePlaceholder(width || 400, height || 225, alt?.slice(0, 3).toUpperCase() || 'IMG');
   }, [width, height, alt]);
 
+  // 使用 layoutEffect 确保在 DOM 更新后同步状态
+  const [prevSrc, setPrevSrc] = useState<string | undefined>(undefined);
+  
   useEffect(() => {
-    // 重置状态当 src 变化时
-    setLoaded(false);
-    setCurrentSrc(src);
-  }, [src]);
+    // 使用 setTimeout 避免同步状态更新
+    const timer = setTimeout(() => {
+      if (prevSrc !== src) {
+        setLoaded(false);
+        setCurrentSrc(src);
+        setPrevSrc(src);
+      }
+    }, 0);
+    
+    return () => clearTimeout(timer);
+  }, [src, prevSrc]);
 
   const handleError = () => {
     if (fallbackSrc && currentSrc !== fallbackSrc) {
