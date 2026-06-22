@@ -18,7 +18,7 @@ export const profile: Profile = {
 在广告投放系统领域有深入研究，曾主导开发支持亿级 PV 的广告脚本引擎，实现毫秒级加载性能。擅长前端性能优化、架构设计和团队技术建设。
 
 热爱开源，持续关注前端技术发展，乐于分享技术经验。追求极致的用户体验和代码质量，相信技术可以改变世界。`,
-  tagline: 'Code is poetry, performance is art',
+  tagline: '如果用JS来表示我们的一生，那将会是一个超级无限长的嵌套。',
   socialLinks: [
     {
       platform: 'GitHub',
