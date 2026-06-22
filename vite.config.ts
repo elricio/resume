@@ -6,8 +6,8 @@ import { resolve } from 'path';
 export default defineConfig({
   plugins: [react()],
 
-  // GitHub Pages 部署时需要配置 base 路径
-  base: '/resume/',
+  // 使用自定义域名 elricli.com，指向根路径
+  base: '/',
 
   resolve: {
     alias: {
