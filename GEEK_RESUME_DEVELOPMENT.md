@@ -269,20 +269,20 @@ export interface Profile {
 }
 
 export const profile: Profile = {
-  name: 'Elric',
+  name: 'elric',
   title: '高级前端工程师',
   avatar: '/images/avatar.jpg',
   location: '北京',
-  email: 'elricli@126.com',
+  email: 'elric@linux.do',
   phone: '18810609069',
   website: 'https://elricio.github.io',
   github: 'https://github.com/elricio',
   linkedin: '',
   summary: '拥有多年前端开发经验，专注于高性能 Web 应用开发...',
-  tagline: 'Code is poetry, performance is art',
+  tagline: '如果用JS来表示我们的一生，那将会是一个超级无限长的嵌套。',
   socialLinks: [
     { platform: 'GitHub', url: 'https://github.com/elricio', icon: 'github' },
-    { platform: 'Email', url: 'mailto:elricli@126.com', icon: 'mail' }
+    { platform: 'Email', url: 'mailto:elric@linux.do', icon: 'mail' }
   ]
 }
 ```

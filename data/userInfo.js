@@ -19,12 +19,12 @@
 */
 
 var userInfo = {
-  userName: 'Elric',
+  userName: 'elric',
   userPortrait: 'images/icon/header.jpg',
   jobWant: 'WEB前端开发工程师',
   userQQ: '1318245851',
-  userEmail: 'elricli@126.com',
-  motto: '躺下就永远不会再跌倒，可谁让我们都喜欢站着',
+  userEmail: 'elric@linux.do',
+  motto: '如果用JS来表示我们的一生，那将会是一个超级无限长的嵌套。',
   userPhone: 18810609069,
   userOrignPlace: '河南省周口市',
   userSeatPlace: '北京市',

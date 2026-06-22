@@ -8,9 +8,9 @@ export const profile: Profile = {
   title: '高级前端工程师',
   avatar: '/resume/src/assets/images/avatar.svg',
   location: '北京',
-  email: 'elricli@126.com',
+  email: 'elric@linux.do',
   phone: '18810609069',
-  website: 'https://elricio.github.io',
+  website: 'https://www.elricli.com',
   github: 'https://github.com/elricio',
   linkedin: '',
   summary: `拥有多年前端开发经验，专注于高性能 Web 应用开发。精通 JavaScript、TypeScript、React 等主流技术栈，具备扎实的计算机基础和丰富的工程化实践经验。
@@ -27,12 +27,12 @@ export const profile: Profile = {
     },
     {
       platform: 'Email',
-      url: 'mailto:elricli@126.com',
+      url: 'mailto:elric@linux.do',
       icon: 'mail'
     },
     {
       platform: 'Website',
-      url: 'https://elricio.github.io',
+      url: 'https://www.elricli.com',
       icon: 'globe'
     }
   ]
