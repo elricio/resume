@@ -1,5 +1,14 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+dist-ssr/
+*.tsbuildinfo
+
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,18 +16,126 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Local config files
 *.local
 
-# Editor directories and files
+# ============================================
+# AI Coding Tools
+# ============================================
+
+## Claude Code
+.claude/settings.local.json
+.claude/memories/
+.claude/worktrees/
+.claude/scheduled_tasks.json
+.claude/*.lock.json
+
+## Cursor
+.cursor/
+
+## Cline / Roo Code
+.cline/
+.clinerules
+.clineignore
+.roo/
+.rooignore
+.roomodes
+
+## Continue (continue.dev)
+.continue/
+
+## Windsurf / Codeium
+.windsurf/
+.windsurfrules
+.codeiumignore
+
+## Aider
+.aider*
+.aider.conf.yml
+.aiderignore
+
+## Gemini Code Assist (Google)
+.gemini/
+.geminiignore
+GEMINI.md
+
+## Amazon Q Developer
+.amazonq/
+
+## JetBrains AI
+.aiignore
+
+## Codex (OpenAI)
+.codex/
+
+## Kiro
+kiro-specs/
+
+# ============================================
+# Development scratch files
+# ============================================
+*DEVELOPMENT*
+*development*
+*devlog*
+*scratch*
+*tmp*
+*temp*
+*draft*
+*notes*
+TODO*
+TODO.*
+CHANGELOG.*
+CHANGELOG.*
+
+# Backup files
+*.bak
+*.backup
+*.orig
+*.swp
+*.swo
+*~
+
+# Patch files
+*.patch
+*.diff
+
+# Cache directories
+.cache/
+.eslintcache
+.stylelintcache
+.parcel-cache/
+.mfsu/
+
+# ============================================
+# Editor / IDE
+# ============================================
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+.history/
+
+# ============================================
+# OS files
+# ============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Accidental tilde directory (Windows bash path expansion artifact)
+~/
