@@ -273,8 +273,8 @@ export const profile: Profile = {
   title: '高级前端工程师',
   avatar: '/images/avatar.jpg',
   location: '北京',
-  email: 'elric@linux.do',
-  phone: '18810609069',
+  email: 'hi@elricli.com',
+  phone: '18888888888',
   website: 'https://elricio.github.io',
   github: 'https://github.com/elricio',
   linkedin: '',
@@ -282,7 +282,7 @@ export const profile: Profile = {
   tagline: '如果用JS来表示我们的一生，那将会是一个超级无限长的嵌套。',
   socialLinks: [
     { platform: 'GitHub', url: 'https://github.com/elricio', icon: 'github' },
-    { platform: 'Email', url: 'mailto:elric@linux.do', icon: 'mail' }
+    { platform: 'Email', url: 'mailto:hi@elricli.com', icon: 'mail' }
   ]
 }
 ```

@@ -192,7 +192,7 @@ export const CONFIG = {
 // ==================== 社交链接 ====================
 export const SOCIAL_LINKS = {
   github: 'https://github.com/elricio',
-  email: 'mailto:elric@linux.do',
+  email: 'mailto:hi@elricli.com',
   linkedin: '',
   twitter: '',
   website: 'https://elricio.github.io'

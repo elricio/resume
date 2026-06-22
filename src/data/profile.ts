@@ -8,8 +8,8 @@ export const profile: Profile = {
   title: '高级前端工程师',
   avatar: '/resume/src/assets/images/avatar.svg',
   location: '北京',
-  email: 'elric@linux.do',
-  phone: '18810609069',
+  email: 'hi@elricli.com',
+  phone: '18888888888',
   website: 'https://www.elricli.com',
   github: 'https://github.com/elricio',
   linkedin: '',
@@ -27,7 +27,7 @@ export const profile: Profile = {
     },
     {
       platform: 'Email',
-      url: 'mailto:elric@linux.do',
+      url: 'mailto:hi@elricli.com',
       icon: 'mail'
     },
     {
