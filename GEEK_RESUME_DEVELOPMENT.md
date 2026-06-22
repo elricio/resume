@@ -20,15 +20,15 @@
 
 ### 核心技术栈
 
-| 技术 | 选型 | 理由 |
-|------|------|------|
-| **构建工具** | Vite 5 + TypeScript | 极速开发体验，现代化构建 |
-| **前端框架** | React 18 + Hooks | 组件化开发，状态管理 |
-| **样式方案** | Tailwind CSS + CSS Modules | 原子化样式，类型安全 |
-| **动画库** | Framer Motion | 声明式动画，性能优秀 |
-| **图表可视化** | Recharts / D3.js | 数据可视化展示 |
-| **代码高亮** | Prism.js / Shiki | 技术博客/项目展示 |
-| **部署** | Vercel / GitHub Pages | CI/CD 自动化 |
+| 技术           | 选型                       | 理由                     |
+| -------------- | -------------------------- | ------------------------ |
+| **构建工具**   | Vite 5 + TypeScript        | 极速开发体验，现代化构建 |
+| **前端框架**   | React 18 + Hooks           | 组件化开发，状态管理     |
+| **样式方案**   | Tailwind CSS + CSS Modules | 原子化样式，类型安全     |
+| **动画库**     | Framer Motion              | 声明式动画，性能优秀     |
+| **图表可视化** | Recharts / D3.js           | 数据可视化展示           |
+| **代码高亮**   | Prism.js / Shiki           | 技术博客/项目展示        |
+| **部署**       | Vercel / GitHub Pages      | CI/CD 自动化             |
 
 ### 开发工具
 
@@ -157,16 +157,16 @@ export const COLORS = {
   primary: {
     50: '#f0f9ff',
     100: '#e0f2fe',
-    500: '#0ea5e9',    // 科技蓝
+    500: '#0ea5e9', // 科技蓝
     600: '#0284c7',
-    900: '#0c4a6e',
+    900: '#0c4a6e'
   },
 
   // 强调色 - 霓虹紫
   accent: {
     400: '#a78bfa',
     500: '#8b5cf6',
-    600: '#7c3aed',
+    600: '#7c3aed'
   },
 
   // 成功/警告/错误
@@ -186,15 +186,15 @@ export const COLORS = {
     700: '#3f3f46',
     800: '#27272a',
     900: '#18181b',
-    950: '#09090b',
+    950: '#09090b'
   },
 
   // 玻璃拟态
   glass: {
     bg: 'rgba(15, 23, 42, 0.7)',
-    border: 'rgba(148, 163, 184, 0.1)',
+    border: 'rgba(148, 163, 184, 0.1)'
   }
-} as const;
+} as const
 ```
 
 ### 字体系统
@@ -213,32 +213,32 @@ export const FONTS = {
 
   // 大小系统
   sizes: {
-    xs: '0.75rem',    // 12px
-    sm: '0.875rem',   // 14px
-    base: '1rem',     // 16px
-    lg: '1.125rem',   // 18px
-    xl: '1.25rem',    // 20px
-    '2xl': '1.5rem',  // 24px
+    xs: '0.75rem', // 12px
+    sm: '0.875rem', // 14px
+    base: '1rem', // 16px
+    lg: '1.125rem', // 18px
+    xl: '1.25rem', // 20px
+    '2xl': '1.5rem', // 24px
     '3xl': '1.875rem', // 30px
     '4xl': '2.25rem', // 36px
-    '5xl': '3rem',    // 48px
+    '5xl': '3rem' // 48px
   }
-} as const;
+} as const
 ```
 
 ### 间距系统
 
 ```typescript
 export const SPACING = {
-  xs: '0.25rem',    // 4px
-  sm: '0.5rem',     // 8px
-  md: '1rem',       // 16px
-  lg: '1.5rem',     // 24px
-  xl: '2rem',       // 32px
-  '2xl': '3rem',    // 48px
-  '3xl': '4rem',    // 64px
-  '4xl': '6rem',    // 96px
-} as const;
+  xs: '0.25rem', // 4px
+  sm: '0.5rem', // 8px
+  md: '1rem', // 16px
+  lg: '1.5rem', // 24px
+  xl: '2rem', // 32px
+  '2xl': '3rem', // 48px
+  '3xl': '4rem', // 64px
+  '4xl': '6rem' // 96px
+} as const
 ```
 
 ---
@@ -250,41 +250,41 @@ export const SPACING = {
 ```typescript
 // src/data/profile.ts
 export interface Profile {
-  name: string;
-  title: string;
-  avatar: string;
-  location: string;
-  email: string;
-  phone: string;
-  website: string;
-  github: string;
-  linkedin: string;
-  summary: string;
-  tagline: string;
+  name: string
+  title: string
+  avatar: string
+  location: string
+  email: string
+  phone: string
+  website: string
+  github: string
+  linkedin: string
+  summary: string
+  tagline: string
   socialLinks: {
-    platform: string;
-    url: string;
-    icon: string;
-  }[];
+    platform: string
+    url: string
+    icon: string
+  }[]
 }
 
 export const profile: Profile = {
-  name: "Elric",
-  title: "高级前端工程师",
-  avatar: "/images/avatar.jpg",
-  location: "北京",
-  email: "elrico@163.com",
-  phone: "18810609069",
-  website: "https://elricio.github.io",
-  github: "https://github.com/elricio",
-  linkedin: "",
-  summary: "拥有多年前端开发经验，专注于高性能 Web 应用开发...",
-  tagline: "Code is poetry, performance is art",
+  name: 'Elric',
+  title: '高级前端工程师',
+  avatar: '/images/avatar.jpg',
+  location: '北京',
+  email: 'elricli@126.com',
+  phone: '18810609069',
+  website: 'https://elricio.github.io',
+  github: 'https://github.com/elricio',
+  linkedin: '',
+  summary: '拥有多年前端开发经验，专注于高性能 Web 应用开发...',
+  tagline: 'Code is poetry, performance is art',
   socialLinks: [
-    { platform: "GitHub", url: "https://github.com/elricio", icon: "github" },
-    { platform: "Email", url: "mailto:elrico@163.com", icon: "mail" },
+    { platform: 'GitHub', url: 'https://github.com/elricio', icon: 'github' },
+    { platform: 'Email', url: 'mailto:elricli@126.com', icon: 'mail' }
   ]
-};
+}
 ```
 
 ### 技能数据 (Skills)
@@ -292,70 +292,70 @@ export const profile: Profile = {
 ```typescript
 // src/data/skills.ts
 export interface SkillCategory {
-  category: string;
-  skills: Skill[];
+  category: string
+  skills: Skill[]
 }
 
 export interface Skill {
-  name: string;
-  level: number; // 0-100
-  description: string[];
-  icon?: string;
-  color?: string;
-  tags?: string[];
+  name: string
+  level: number // 0-100
+  description: string[]
+  icon?: string
+  color?: string
+  tags?: string[]
 }
 
 export const skillCategories: SkillCategory[] = [
   {
-    category: "前端核心",
+    category: '前端核心',
     skills: [
       {
-        name: "JavaScript/TypeScript",
+        name: 'JavaScript/TypeScript',
         level: 95,
         description: [
-          "深入理解 V8 引擎原理",
-          "精通异步编程、Promise、Async/Await",
-          "熟练掌握 TS 高级类型、泛型、装饰器",
-          "熟悉 ES2023+ 新特性"
+          '深入理解 V8 引擎原理',
+          '精通异步编程、Promise、Async/Await',
+          '熟练掌握 TS 高级类型、泛型、装饰器',
+          '熟悉 ES2023+ 新特性'
         ],
-        icon: "javascript",
-        color: "#f7df1e",
-        tags: ["ES6+", "TypeScript", "Node.js"]
+        icon: 'javascript',
+        color: '#f7df1e',
+        tags: ['ES6+', 'TypeScript', 'Node.js']
       },
       {
-        name: "React 生态",
+        name: 'React 生态',
         level: 90,
         description: [
-          "精通 React 18 Hooks、Concurrent Mode",
-          "熟练使用 Next.js、Remix 等框架",
-          "深入理解 Fiber 架构、Reconciliation",
-          "掌握状态管理：Redux Toolkit、Zustand、Jotai"
+          '精通 React 18 Hooks、Concurrent Mode',
+          '熟练使用 Next.js、Remix 等框架',
+          '深入理解 Fiber 架构、Reconciliation',
+          '掌握状态管理：Redux Toolkit、Zustand、Jotai'
         ],
-        icon: "react",
-        color: "#61dafb",
-        tags: ["React 18", "Next.js", "Redux"]
+        icon: 'react',
+        color: '#61dafb',
+        tags: ['React 18', 'Next.js', 'Redux']
       }
     ]
   },
   {
-    category: "工程化",
+    category: '工程化',
     skills: [
       {
-        name: "构建工具",
+        name: '构建工具',
         level: 85,
         description: [
-          "精通 Vite、Webpack 配置优化",
-          "熟悉 Rollup、esbuild、Turbopack",
-          "掌握微前端架构（Module Federation）",
-          "CI/CD 流程设计与优化"
+          '精通 Vite、Webpack 配置优化',
+          '熟悉 Rollup、esbuild、Turbopack',
+          '掌握微前端架构（Module Federation）',
+          'CI/CD 流程设计与优化'
         ],
-        icon: "tool",
-        color: "#8b5cf6",
-        tags: ["Vite", "Webpack", "Turborepo"]
+        icon: 'tool',
+        color: '#8b5cf6',
+        tags: ['Vite', 'Webpack', 'Turborepo']
       }
     ]
   }
-];
+]
 ```
 
 ### 工作经历 (Experience)
@@ -363,41 +363,41 @@ export const skillCategories: SkillCategory[] = [
 ```typescript
 // src/data/experience.ts
 export interface Experience {
-  company: string;
-  logo?: string;
-  position: string;
-  location: string;
-  startDate: string;
-  endDate: string | "至今";
-  description: string;
-  achievements: string[];
-  technologies: string[];
-  projects?: Project[];
+  company: string
+  logo?: string
+  position: string
+  location: string
+  startDate: string
+  endDate: string | '至今'
+  description: string
+  achievements: string[]
+  technologies: string[]
+  projects?: Project[]
 }
 
 export const experiences: Experience[] = [
   {
-    company: "四翼鸟科技",
-    position: "高级前端工程师",
-    location: "北京",
-    startDate: "2017-03",
-    endDate: "至今",
-    description: "负责广告投放系统前端架构设计与开发",
+    company: '四翼鸟科技',
+    position: '高级前端工程师',
+    location: '北京',
+    startDate: '2017-03',
+    endDate: '至今',
+    description: '负责广告投放系统前端架构设计与开发',
     achievements: [
-      "设计并实现高性能广告脚本引擎，支持毫秒级加载",
-      "优化前端性能，首屏加载时间减少 60%",
-      "建立前端监控体系，错误率降低 80%"
+      '设计并实现高性能广告脚本引擎，支持毫秒级加载',
+      '优化前端性能，首屏加载时间减少 60%',
+      '建立前端监控体系，错误率降低 80%'
     ],
-    technologies: ["JavaScript", "TypeScript", "Puppeteer", "PhantomJS", "Webpack"],
+    technologies: ['JavaScript', 'TypeScript', 'Puppeteer', 'PhantomJS', 'Webpack'],
     projects: [
       {
-        name: "广告投放系统",
-        description: "支持亿级 PV 的广告投放平台",
-        tech: ["React", "TypeScript", "Vite", "Web Workers"]
+        name: '广告投放系统',
+        description: '支持亿级 PV 的广告投放平台',
+        tech: ['React', 'TypeScript', 'Vite', 'Web Workers']
       }
     ]
   }
-];
+]
 ```
 
 ### 项目数据 (Projects)
@@ -405,40 +405,40 @@ export const experiences: Experience[] = [
 ```typescript
 // src/data/projects.ts
 export interface Project {
-  name: string;
-  description: string;
-  url: string;
-  github?: string;
-  thumbnail?: string;
-  startDate: string;
-  endDate: string;
-  technologies: string[];
-  features: string[];
+  name: string
+  description: string
+  url: string
+  github?: string
+  thumbnail?: string
+  startDate: string
+  endDate: string
+  technologies: string[]
+  features: string[]
   metrics?: {
-    stars?: number;
-    downloads?: number;
-    performance?: string;
-  };
-  category: "open-source" | "work" | "personal";
+    stars?: number
+    downloads?: number
+    performance?: string
+  }
+  category: 'open-source' | 'work' | 'personal'
 }
 
 export const projects: Project[] = [
   {
-    name: "微云网页版",
-    description: "基于原生 JavaScript 的云存储前端，支持文件夹管理、批量操作",
-    url: "https://elricio.github.io/weiyun/",
-    github: "https://github.com/elricio/weiyun",
-    startDate: "2016-05",
-    endDate: "至今",
-    technologies: ["JavaScript", "CSS3", "LocalStorage"],
+    name: '微云网页版',
+    description: '基于原生 JavaScript 的云存储前端，支持文件夹管理、批量操作',
+    url: 'https://elricio.github.io/weiyun/',
+    github: 'https://github.com/elricio/weiyun',
+    startDate: '2016-05',
+    endDate: '至今',
+    technologies: ['JavaScript', 'CSS3', 'LocalStorage'],
     features: [
-      "实现文件夹树形结构与拖拽排序",
-      "支持批量上传、下载、删除",
-      "响应式设计，适配移动端"
+      '实现文件夹树形结构与拖拽排序',
+      '支持批量上传、下载、删除',
+      '响应式设计，适配移动端'
     ],
-    category: "personal"
+    category: 'personal'
   }
-];
+]
 ```
 
 ### 开源贡献 (Open Source)
@@ -446,28 +446,28 @@ export const projects: Project[] = [
 ```typescript
 // src/data/openSource.ts
 export interface OpenSource {
-  repo: string;
-  description: string;
-  stars: number;
-  forks: number;
-  language: string;
-  topics: string[];
-  contributions: number;
-  url: string;
+  repo: string
+  description: string
+  stars: number
+  forks: number
+  language: string
+  topics: string[]
+  contributions: number
+  url: string
 }
 
 export const openSource: OpenSource[] = [
   {
-    repo: "elricio/utils",
-    description: "前端工具函数库，包含 100+ 常用函数",
+    repo: 'elricio/utils',
+    description: '前端工具函数库，包含 100+ 常用函数',
     stars: 234,
     forks: 45,
-    language: "TypeScript",
-    topics: ["typescript", "utilities", "frontend"],
+    language: 'TypeScript',
+    topics: ['typescript', 'utilities', 'frontend'],
     contributions: 42,
-    url: "https://github.com/elricio/utils"
+    url: 'https://github.com/elricio/utils'
   }
-];
+]
 ```
 
 ---
@@ -478,28 +478,28 @@ export const openSource: OpenSource[] = [
 
 ```typescript
 // src/hooks/useIntersection.ts
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect, useState } from 'react'
 
 export const useIntersection = <T extends HTMLElement>(
   options: IntersectionObserverInit = { threshold: 0.1 }
 ) => {
-  const ref = useRef<T>(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef<T>(null)
+  const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
-    if (!ref.current) return;
+    if (!ref.current) return
 
     const observer = new IntersectionObserver(([entry]) => {
-      setIsVisible(entry.isIntersecting);
-    }, options);
+      setIsVisible(entry.isIntersecting)
+    }, options)
 
-    observer.observe(ref.current);
+    observer.observe(ref.current)
 
-    return () => observer.disconnect();
-  }, [options]);
+    return () => observer.disconnect()
+  }, [options])
 
-  return { ref, isVisible };
-};
+  return { ref, isVisible }
+}
 ```
 
 ### 动画配置
@@ -509,8 +509,8 @@ export const useIntersection = <T extends HTMLElement>(
 export const fadeInUp = {
   initial: { opacity: 0, y: 60 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6, ease: "easeOut" }
-};
+  transition: { duration: 0.6, ease: 'easeOut' }
+}
 
 export const staggerContainer = {
   hidden: { opacity: 0 },
@@ -520,19 +520,19 @@ export const staggerContainer = {
       staggerChildren: 0.1
     }
   }
-};
+}
 
 export const slideInFromLeft = {
   initial: { opacity: 0, x: -100 },
   animate: { opacity: 1, x: 0 },
   transition: { duration: 0.5 }
-};
+}
 
 export const scaleIn = {
   initial: { opacity: 0, scale: 0.9 },
   animate: { opacity: 1, scale: 1 },
   transition: { duration: 0.4 }
-};
+}
 ```
 
 ---
@@ -543,14 +543,14 @@ export const scaleIn = {
 
 ```tsx
 // src/components/shared/SkillRadar.tsx
-import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer } from 'recharts';
+import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer } from 'recharts'
 
 interface SkillRadarProps {
   data: {
-    subject: string;
-    A: number;
-    fullMark: number;
-  }[];
+    subject: string
+    A: number
+    fullMark: number
+  }[]
 }
 
 export const SkillRadar: React.FC<SkillRadarProps> = ({ data }) => {
@@ -559,39 +559,33 @@ export const SkillRadar: React.FC<SkillRadarProps> = ({ data }) => {
       <RadarChart cx="50%" cy="50%" outerRadius="80%" data={data}>
         <PolarGrid />
         <PolarAngleAxis dataKey="subject" />
-        <Radar
-          name="技能水平"
-          dataKey="A"
-          stroke="#8b5cf6"
-          fill="#8b5cf6"
-          fillOpacity={0.6}
-        />
+        <Radar name="技能水平" dataKey="A" stroke="#8b5cf6" fill="#8b5cf6" fillOpacity={0.6} />
       </RadarChart>
     </ResponsiveContainer>
-  );
-};
+  )
+}
 ```
 
 ### 时间轴组件 (Timeline)
 
 ```tsx
 // src/components/shared/Timeline.tsx
-import { motion } from 'framer-motion';
-import { useIntersection } from '@/hooks/useIntersection';
+import { motion } from 'framer-motion'
+import { useIntersection } from '@/hooks/useIntersection'
 
 interface TimelineItem {
-  date: string;
-  title: string;
-  description: string;
-  icon?: string;
+  date: string
+  title: string
+  description: string
+  icon?: string
 }
 
 interface TimelineProps {
-  items: TimelineItem[];
+  items: TimelineItem[]
 }
 
 export const Timeline: React.FC<TimelineProps> = ({ items }) => {
-  const { ref, isVisible } = useIntersection<HTMLDivElement>();
+  const { ref, isVisible } = useIntersection<HTMLDivElement>()
 
   return (
     <div ref={ref} className="relative">
@@ -604,9 +598,7 @@ export const Timeline: React.FC<TimelineProps> = ({ items }) => {
           initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
           animate={isVisible ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.5, delay: index * 0.1 }}
-          className={`flex items-center mb-8 ${
-            index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
-          }`}
+          className={`flex items-center mb-8 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}
         >
           <div className="w-1/2 px-4">
             <div className="bg-slate-800/50 backdrop-blur p-4 rounded-lg border border-slate-700">
@@ -619,31 +611,31 @@ export const Timeline: React.FC<TimelineProps> = ({ items }) => {
         </motion.div>
       ))}
     </div>
-  );
-};
+  )
+}
 ```
 
 ### 代码展示组件 (CodeBlock)
 
 ```tsx
 // src/components/shared/CodeBlock.tsx
-import { useState } from 'react';
-import { Copy, Check } from 'lucide-react';
+import { useState } from 'react'
+import { Copy, Check } from 'lucide-react'
 
 interface CodeBlockProps {
-  code: string;
-  language: string;
-  showCopy?: boolean;
+  code: string
+  language: string
+  showCopy?: boolean
 }
 
 export const CodeBlock: React.FC<CodeBlockProps> = ({ code, language, showCopy = true }) => {
-  const [copied, setCopied] = useState(false);
+  const [copied, setCopied] = useState(false)
 
   const handleCopy = async () => {
-    await navigator.clipboard.writeText(code);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
+    await navigator.clipboard.writeText(code)
+    setCopied(true)
+    setTimeout(() => setCopied(false), 2000)
+  }
 
   return (
     <div className="relative bg-slate-900 rounded-lg overflow-hidden border border-slate-700">
@@ -663,8 +655,8 @@ export const CodeBlock: React.FC<CodeBlockProps> = ({ code, language, showCopy =
         <code>{code}</code>
       </pre>
     </div>
-  );
-};
+  )
+}
 ```
 
 ---
@@ -675,9 +667,9 @@ export const CodeBlock: React.FC<CodeBlockProps> = ({ code, language, showCopy =
 
 ```tsx
 // src/sections/Hero/index.tsx
-import { motion } from 'framer-motion';
-import { profile } from '@/data/profile';
-import { Button } from '@/components/ui/Button';
+import { motion } from 'framer-motion'
+import { profile } from '@/data/profile'
+import { Button } from '@/components/ui/Button'
 
 export const Hero: React.FC = () => {
   return (
@@ -700,26 +692,18 @@ export const Hero: React.FC = () => {
           <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
-            transition={{ delay: 0.2, type: "spring", stiffness: 100 }}
+            transition={{ delay: 0.2, type: 'spring', stiffness: 100 }}
             className="w-40 h-40 mx-auto mb-8 rounded-full border-4 border-purple-500/50 overflow-hidden shadow-2xl"
           >
-            <img
-              src={profile.avatar}
-              alt={profile.name}
-              className="w-full h-full object-cover"
-            />
+            <img src={profile.avatar} alt={profile.name} className="w-full h-full object-cover" />
           </motion.div>
 
           {/* 文字内容 */}
           <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-white via-purple-200 to-blue-200 bg-clip-text text-transparent">
             {profile.name}
           </h1>
-          <p className="text-xl md:text-2xl text-slate-400 mb-6 font-mono">
-            {profile.title}
-          </p>
-          <p className="text-lg text-slate-500 max-w-2xl mx-auto mb-8">
-            {profile.tagline}
-          </p>
+          <p className="text-xl md:text-2xl text-slate-400 mb-6 font-mono">{profile.title}</p>
+          <p className="text-lg text-slate-500 max-w-2xl mx-auto mb-8">{profile.tagline}</p>
 
           {/* 按钮组 */}
           <div className="flex flex-wrap justify-center gap-4">
@@ -744,22 +728,22 @@ export const Hero: React.FC = () => {
         </motion.div>
       </div>
     </section>
-  );
-};
+  )
+}
 ```
 
 ### 2. 技能展示区 (Skills)
 
 ```tsx
 // src/sections/Skills/index.tsx
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { skillCategories } from '@/data/skills';
-import { SkillRadar } from '@/components/shared/SkillRadar';
-import { CodeBlock } from '@/components/shared/CodeBlock';
+import { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { skillCategories } from '@/data/skills'
+import { SkillRadar } from '@/components/shared/SkillRadar'
+import { CodeBlock } from '@/components/shared/CodeBlock'
 
 export const Skills: React.FC = () => {
-  const [activeCategory, setActiveCategory] = useState(0);
+  const [activeCategory, setActiveCategory] = useState(0)
 
   return (
     <section id="skills" className="py-20 bg-slate-900/50">
@@ -862,32 +846,30 @@ export const Skills: React.FC = () => {
                 { subject: 'TypeScript', A: 85, fullMark: 100 },
                 { subject: 'Node.js', A: 75, fullMark: 100 },
                 { subject: 'CSS', A: 90, fullMark: 100 },
-                { subject: '性能优化', A: 85, fullMark: 100 },
+                { subject: '性能优化', A: 85, fullMark: 100 }
               ]}
             />
           </div>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 ```
 
 ### 3. 项目展示区 (Projects)
 
 ```tsx
 // src/sections/Projects/index.tsx
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { projects } from '@/data/projects';
-import { ExternalLink, Github } from 'lucide-react';
+import { useState } from 'react'
+import { motion } from 'framer-motion'
+import { projects } from '@/data/projects'
+import { ExternalLink, Github } from 'lucide-react'
 
 export const Projects: React.FC = () => {
-  const [filter, setFilter] = useState<'all' | 'open-source' | 'work' | 'personal'>('all');
+  const [filter, setFilter] = useState<'all' | 'open-source' | 'work' | 'personal'>('all')
 
-  const filteredProjects = filter === 'all'
-    ? projects
-    : projects.filter(p => p.category === filter);
+  const filteredProjects = filter === 'all' ? projects : projects.filter(p => p.category === filter)
 
   return (
     <section id="projects" className="py-20">
@@ -904,7 +886,7 @@ export const Projects: React.FC = () => {
 
         {/* 过滤器 */}
         <div className="flex flex-wrap justify-center gap-3 mb-12">
-          {(['all', 'open-source', 'work', 'personal'] as const).map((cat) => (
+          {(['all', 'open-source', 'work', 'personal'] as const).map(cat => (
             <button
               key={cat}
               onClick={() => setFilter(cat)}
@@ -971,9 +953,7 @@ export const Projects: React.FC = () => {
                   </div>
                 </div>
 
-                <p className="text-slate-400 text-sm mb-4 line-clamp-2">
-                  {project.description}
-                </p>
+                <p className="text-slate-400 text-sm mb-4 line-clamp-2">{project.description}</p>
 
                 {/* 技术栈 */}
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -1000,12 +980,8 @@ export const Projects: React.FC = () => {
                 {/* 指标 */}
                 {project.metrics && (
                   <div className="mt-4 pt-4 border-t border-slate-700 flex gap-4 text-xs text-slate-400">
-                    {project.metrics.stars && (
-                      <span>⭐ {project.metrics.stars}</span>
-                    )}
-                    {project.metrics.downloads && (
-                      <span>📥 {project.metrics.downloads}</span>
-                    )}
+                    {project.metrics.stars && <span>⭐ {project.metrics.stars}</span>}
+                    {project.metrics.downloads && <span>📥 {project.metrics.downloads}</span>}
                   </div>
                 )}
               </div>
@@ -1014,17 +990,17 @@ export const Projects: React.FC = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 ```
 
 ### 4. 工作经历区 (Experience)
 
 ```tsx
 // src/sections/Experience/index.tsx
-import { experiences } from '@/data/experience';
-import { Timeline } from '@/components/shared/Timeline';
-import { motion } from 'framer-motion';
+import { experiences } from '@/data/experience'
+import { Timeline } from '@/components/shared/Timeline'
+import { motion } from 'framer-motion'
 
 export const Experience: React.FC = () => {
   const timelineItems = experiences.map(exp => ({
@@ -1032,7 +1008,7 @@ export const Experience: React.FC = () => {
     title: `${exp.position} @ ${exp.company}`,
     description: exp.description,
     icon: exp.logo
-  }));
+  }))
 
   return (
     <section id="experience" className="py-20 bg-slate-900/50">
@@ -1061,9 +1037,7 @@ export const Experience: React.FC = () => {
               className="bg-slate-800/50 backdrop-blur p-6 rounded-xl border border-slate-700"
             >
               <div className="flex items-center gap-3 mb-4">
-                {exp.logo && (
-                  <img src={exp.logo} alt={exp.company} className="w-10 h-10 rounded" />
-                )}
+                {exp.logo && <img src={exp.logo} alt={exp.company} className="w-10 h-10 rounded" />}
                 <div>
                   <h3 className="text-lg font-semibold text-white">{exp.company}</h3>
                   <p className="text-sm text-slate-400">{exp.position}</p>
@@ -1101,27 +1075,37 @@ export const Experience: React.FC = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 ```
 
 ### 5. 联系方式区 (Contact)
 
 ```tsx
 // src/sections/Contact/index.tsx
-import { motion } from 'framer-motion';
-import { profile } from '@/data/profile';
-import { Mail, MapPin, Phone, Globe, Github, Linkedin } from 'lucide-react';
-import { Button } from '@/components/ui/Button';
+import { motion } from 'framer-motion'
+import { profile } from '@/data/profile'
+import { Mail, MapPin, Phone, Globe, Github, Linkedin } from 'lucide-react'
+import { Button } from '@/components/ui/Button'
 
 export const Contact: React.FC = () => {
   const contactItems = [
-    { icon: <Mail size={20} />, label: 'Email', value: profile.email, href: `mailto:${profile.email}` },
-    { icon: <Phone size={20} />, label: 'Phone', value: profile.phone, href: `tel:${profile.phone}` },
+    {
+      icon: <Mail size={20} />,
+      label: 'Email',
+      value: profile.email,
+      href: `mailto:${profile.email}`
+    },
+    {
+      icon: <Phone size={20} />,
+      label: 'Phone',
+      value: profile.phone,
+      href: `tel:${profile.phone}`
+    },
     { icon: <MapPin size={20} />, label: 'Location', value: profile.location },
     { icon: <Globe size={20} />, label: 'Website', value: profile.website, href: profile.website },
-    { icon: <Github size={20} />, label: 'GitHub', value: 'elricio', href: profile.github },
-  ];
+    { icon: <Github size={20} />, label: 'GitHub', value: 'elricio', href: profile.github }
+  ]
 
   return (
     <section id="contact" className="py-20">
@@ -1157,8 +1141,14 @@ export const Contact: React.FC = () => {
                       <a
                         href={item.href}
                         className="text-white hover:text-purple-400 transition-colors"
-                        target={item.label === 'Website' || item.label === 'GitHub' ? '_blank' : undefined}
-                        rel={item.label === 'Website' || item.label === 'GitHub' ? 'noopener noreferrer' : undefined}
+                        target={
+                          item.label === 'Website' || item.label === 'GitHub' ? '_blank' : undefined
+                        }
+                        rel={
+                          item.label === 'Website' || item.label === 'GitHub'
+                            ? 'noopener noreferrer'
+                            : undefined
+                        }
                       >
                         {item.value}
                       </a>
@@ -1174,9 +1164,7 @@ export const Contact: React.FC = () => {
           {/* 简介 */}
           <div className="bg-gradient-to-br from-purple-900/30 to-blue-900/30 backdrop-blur p-8 rounded-2xl border border-purple-500/30">
             <h3 className="text-2xl font-bold mb-4 text-white">关于我</h3>
-            <p className="text-slate-300 mb-6 leading-relaxed">
-              {profile.summary}
-            </p>
+            <p className="text-slate-300 mb-6 leading-relaxed">{profile.summary}</p>
 
             <div className="space-y-3">
               <div>
@@ -1207,7 +1195,7 @@ export const Contact: React.FC = () => {
               initial={{ opacity: 0, scale: 0 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1, type: "spring" }}
+              transition={{ delay: index * 0.1, type: 'spring' }}
               whileHover={{ scale: 1.1, y: -3 }}
               className="p-3 bg-slate-800 rounded-full border border-slate-700 hover:border-purple-500 hover:bg-purple-600/20 transition-all"
               aria-label={link.platform}
@@ -1219,8 +1207,8 @@ export const Contact: React.FC = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 ```
 
 ---
@@ -1233,27 +1221,27 @@ export const Contact: React.FC = () => {
 // src/styles/themes/dark.ts
 export const darkTheme = {
   colors: {
-    background: '#09090b',      // slate-950
-    surface: '#18181b',         // slate-900
-    surfaceHover: '#27272a',    // slate-800
-    border: '#3f3f46',          // slate-700
-    text: '#fafafa',            // slate-50
-    textSecondary: '#a1a1aa',   // slate-400
-    primary: '#8b5cf6',         // purple-500
-    primaryHover: '#7c3aed',    // purple-600
-    accent: '#0ea5e9',          // blue-500
+    background: '#09090b', // slate-950
+    surface: '#18181b', // slate-900
+    surfaceHover: '#27272a', // slate-800
+    border: '#3f3f46', // slate-700
+    text: '#fafafa', // slate-50
+    textSecondary: '#a1a1aa', // slate-400
+    primary: '#8b5cf6', // purple-500
+    primaryHover: '#7c3aed', // purple-600
+    accent: '#0ea5e9' // blue-500
   },
   fonts: {
     sans: '"Inter", sans-serif',
-    mono: '"JetBrains Mono", monospace',
+    mono: '"JetBrains Mono", monospace'
   },
   shadows: {
     sm: '0 1px 2px 0 rgb(0 0 0 / 0.05)',
     md: '0 4px 6px -1px rgb(0 0 0 / 0.1)',
     lg: '0 10px 15px -3px rgb(0 0 0 / 0.1)',
-    glow: '0 0 20px rgba(139, 92, 246, 0.3)',
+    glow: '0 0 20px rgba(139, 92, 246, 0.3)'
   }
-} as const;
+} as const
 ```
 
 ### 光明主题
@@ -1270,10 +1258,10 @@ export const lightTheme = {
     textSecondary: '#52525b',
     primary: '#7c3aed',
     primaryHover: '#6d28d9',
-    accent: '#0284c7',
-  },
+    accent: '#0284c7'
+  }
   // ... 其他配置
-} as const;
+} as const
 ```
 
 ### Neon 主题 (Glow 效果)
@@ -1288,15 +1276,15 @@ export const neonTheme = {
     border: '#333333',
     text: '#ffffff',
     textSecondary: '#888888',
-    primary: '#00ff88',      // 霓虹绿
+    primary: '#00ff88', // 霓虹绿
     primaryHover: '#00cc6a',
-    accent: '#ff00ff',       // 霓虹粉
+    accent: '#ff00ff' // 霓虹粉
   },
   shadows: {
     glow: '0 0 20px rgba(0, 255, 136, 0.5), 0 0 40px rgba(0, 255, 136, 0.2)',
-    glowPink: '0 0 20px rgba(255, 0, 255, 0.5), 0 0 40px rgba(255, 0, 255, 0.2)',
+    glowPink: '0 0 20px rgba(255, 0, 255, 0.5), 0 0 40px rgba(255, 0, 255, 0.2)'
   }
-} as const;
+} as const
 ```
 
 ---
@@ -1307,13 +1295,13 @@ export const neonTheme = {
 
 ```typescript
 // src/App.tsx - 懒加载路由
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense } from 'react'
 
-const Hero = lazy(() => import('@/sections/Hero'));
-const Skills = lazy(() => import('@/sections/Skills'));
-const Projects = lazy(() => import('@/sections/Projects'));
-const Experience = lazy(() => import('@/sections/Experience'));
-const Contact = lazy(() => import('@/sections/Contact'));
+const Hero = lazy(() => import('@/sections/Hero'))
+const Skills = lazy(() => import('@/sections/Skills'))
+const Projects = lazy(() => import('@/sections/Projects'))
+const Experience = lazy(() => import('@/sections/Experience'))
+const Contact = lazy(() => import('@/sections/Contact'))
 
 function App() {
   return (
@@ -1324,7 +1312,7 @@ function App() {
       <Projects />
       <Contact />
     </Suspense>
-  );
+  )
 }
 ```
 
@@ -1332,14 +1320,14 @@ function App() {
 
 ```typescript
 // src/components/ui/OptimizedImage.tsx
-import { useState } from 'react';
+import { useState } from 'react'
 
 interface OptimizedImageProps {
-  src: string;
-  alt: string;
-  width: number;
-  height: number;
-  className?: string;
+  src: string
+  alt: string
+  width: number
+  height: number
+  className?: string
 }
 
 export const OptimizedImage: React.FC<OptimizedImageProps> = ({
@@ -1349,7 +1337,7 @@ export const OptimizedImage: React.FC<OptimizedImageProps> = ({
   height,
   className = ''
 }) => {
-  const [loaded, setLoaded] = useState(false);
+  const [loaded, setLoaded] = useState(false)
 
   return (
     <div
@@ -1373,37 +1361,37 @@ export const OptimizedImage: React.FC<OptimizedImageProps> = ({
         }`}
       />
     </div>
-  );
-};
+  )
+}
 ```
 
 ### 动画优化
 
 ```typescript
 // src/hooks/useReducedMotion.ts
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'
 
 export const useReducedMotion = () => {
-  const [reducedMotion, setReducedMotion] = useState(false);
+  const [reducedMotion, setReducedMotion] = useState(false)
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
-    setReducedMotion(mediaQuery.matches);
+    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
+    setReducedMotion(mediaQuery.matches)
 
     const handler = (e: MediaQueryListEvent) => {
-      setReducedMotion(e.matches);
-    };
+      setReducedMotion(e.matches)
+    }
 
-    mediaQuery.addEventListener('change', handler);
-    return () => mediaQuery.removeEventListener('change', handler);
-  }, []);
+    mediaQuery.addEventListener('change', handler)
+    return () => mediaQuery.removeEventListener('change', handler)
+  }, [])
 
-  return reducedMotion;
-};
+  return reducedMotion
+}
 
 // 使用示例
 export const AnimatedComponent: React.FC = () => {
-  const reducedMotion = useReducedMotion();
+  const reducedMotion = useReducedMotion()
 
   return (
     <motion.div
@@ -1412,8 +1400,8 @@ export const AnimatedComponent: React.FC = () => {
     >
       Content
     </motion.div>
-  );
-};
+  )
+}
 ```
 
 ---
@@ -1424,79 +1412,79 @@ export const AnimatedComponent: React.FC = () => {
 
 ```typescript
 // tests/unit/components/Button.test.tsx
-import { render, screen, fireEvent } from '@testing-library/react';
-import { Button } from '@/components/ui/Button';
+import { render, screen, fireEvent } from '@testing-library/react'
+import { Button } from '@/components/ui/Button'
 
 describe('Button', () => {
   it('renders children correctly', () => {
-    render(<Button>Click me</Button>);
-    expect(screen.getByText('Click me')).toBeInTheDocument();
-  });
+    render(<Button>Click me</Button>)
+    expect(screen.getByText('Click me')).toBeInTheDocument()
+  })
 
   it('handles click events', () => {
-    const handleClick = vi.fn();
-    render(<Button onClick={handleClick}>Click me</Button>);
+    const handleClick = vi.fn()
+    render(<Button onClick={handleClick}>Click me</Button>)
 
-    fireEvent.click(screen.getByText('Click me'));
-    expect(handleClick).toHaveBeenCalledTimes(1);
-  });
+    fireEvent.click(screen.getByText('Click me'))
+    expect(handleClick).toHaveBeenCalledTimes(1)
+  })
 
   it('applies variant styles correctly', () => {
-    const { container } = render(<Button variant="primary">Primary</Button>);
-    expect(container.firstChild).toHaveClass('bg-purple-600');
-  });
-});
+    const { container } = render(<Button variant="primary">Primary</Button>)
+    expect(container.firstChild).toHaveClass('bg-purple-600')
+  })
+})
 ```
 
 ### E2E 测试
 
 ```typescript
 // tests/e2e/homepage.spec.ts
-import { test, expect } from '@playwright/test';
+import { test, expect } from '@playwright/test'
 
 test.describe('Homepage', () => {
   test('should load and display hero section', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('/')
 
     // 检查标题
-    await expect(page.getByRole('heading', { name: 'Elric' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Elric' })).toBeVisible()
 
     // 检查技能区域
-    await page.getByRole('link', { name: '技术栈' }).click();
-    await expect(page.getByText('JavaScript/TypeScript')).toBeVisible();
+    await page.getByRole('link', { name: '技术栈' }).click()
+    await expect(page.getByText('JavaScript/TypeScript')).toBeVisible()
 
     // 检查项目区域
-    await page.getByRole('link', { name: '项目展示' }).click();
-    await expect(page.getByText('微云网页版')).toBeVisible();
-  });
+    await page.getByRole('link', { name: '项目展示' }).click()
+    await expect(page.getByText('微云网页版')).toBeVisible()
+  })
 
   test('should be responsive', async ({ page }) => {
-    await page.setViewportSize({ width: 375, height: 667 }); // iPhone SE
-    await page.goto('/');
+    await page.setViewportSize({ width: 375, height: 667 }) // iPhone SE
+    await page.goto('/')
 
     // 检查移动端菜单
-    const menuButton = page.getByRole('button', { name: 'Menu' });
-    await expect(menuButton).toBeVisible();
-  });
-});
+    const menuButton = page.getByRole('button', { name: 'Menu' })
+    await expect(menuButton).toBeVisible()
+  })
+})
 ```
 
 ### 视觉回归测试
 
 ```typescript
 // tests/visual/hero.spec.ts
-import { test, expect } from '@playwright/test';
+import { test, expect } from '@playwright/test'
 
 test('hero section visual regression', async ({ page }) => {
-  await page.goto('/');
-  await page.waitForLoadState('networkidle');
+  await page.goto('/')
+  await page.waitForLoadState('networkidle')
 
-  const screenshot = await page.screenshot({ fullPage: true });
+  const screenshot = await page.screenshot({ fullPage: true })
   expect(screenshot).toMatchSnapshot('hero.png', {
     threshold: 0.2,
     maxDiffPixels: 100
-  });
-});
+  })
+})
 ```
 
 ---
@@ -1507,17 +1495,17 @@ test('hero section visual regression', async ({ page }) => {
 
 ```typescript
 // vite.config.ts
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import { visualizer } from 'rollup-plugin-visualizer';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import { visualizer } from 'rollup-plugin-visualizer'
 
 export default defineConfig({
   plugins: [
     react(),
     visualizer({
       filename: 'dist/stats.html',
-      open: false,
-    }),
+      open: false
+    })
   ],
 
   build: {
@@ -1527,30 +1515,30 @@ export default defineConfig({
         manualChunks: {
           'react-vendor': ['react', 'react-dom'],
           'framer-motion': ['framer-motion'],
-          'recharts': ['recharts'],
-          'lucide-react': ['lucide-react'],
-        },
-      },
+          recharts: ['recharts'],
+          'lucide-react': ['lucide-react']
+        }
+      }
     },
     cssCodeSplit: true,
     sourcemap: false,
     minify: 'terser',
     terserOptions: {
       compress: {
-        drop_console: true,
-      },
-    },
+        drop_console: true
+      }
+    }
   },
 
   server: {
     port: 3000,
-    open: true,
+    open: true
   },
 
   optimizeDeps: {
-    include: ['react', 'react-dom', 'framer-motion'],
-  },
-});
+    include: ['react', 'react-dom', 'framer-motion']
+  }
+})
 ```
 
 ### CI/CD (GitHub Actions)
@@ -1713,85 +1701,89 @@ git push
 ```typescript
 // src/utils/performance.ts
 export const measurePerformance = (name: string, fn: () => void) => {
-  const start = performance.now();
-  fn();
-  const end = performance.now();
-  console.log(`${name}: ${end - start}ms`);
-};
+  const start = performance.now()
+  fn()
+  const end = performance.now()
+  console.log(`${name}: ${end - start}ms`)
+}
 
 export const trackWebVitals = () => {
   // Core Web Vitals
-  const observer = new PerformanceObserver((list) => {
+  const observer = new PerformanceObserver(list => {
     for (const entry of list.getEntries()) {
-      console.log('Web Vital:', entry.name, entry);
+      console.log('Web Vital:', entry.name, entry)
 
       // 发送到分析服务
       if (window.gtag) {
         window.gtag('event', 'web_vital', {
           event_category: 'performance',
           event_label: entry.name,
-          value: Math.round(entry.startTime),
-        });
+          value: Math.round(entry.startTime)
+        })
       }
     }
-  });
+  })
 
-  observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input-delay', 'layout-shift'] });
-};
+  observer.observe({
+    entryTypes: ['largest-contentful-paint', 'first-input-delay', 'layout-shift']
+  })
+}
 ```
 
 ### 错误监控
 
 ```typescript
 // src/utils/errorBoundary.tsx
-import { Component, ErrorInfo, ReactNode } from 'react';
+import { Component, ErrorInfo, ReactNode } from 'react'
 
 interface ErrorBoundaryProps {
-  children: ReactNode;
-  fallback?: ReactNode;
+  children: ReactNode
+  fallback?: ReactNode
 }
 
 interface ErrorBoundaryState {
-  hasError: boolean;
-  error?: Error;
+  hasError: boolean
+  error?: Error
 }
 
 export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
   constructor(props: ErrorBoundaryProps) {
-    super(props);
-    this.state = { hasError: false };
+    super(props)
+    this.state = { hasError: false }
   }
 
   static getDerivedStateFromError(error: Error): ErrorBoundaryState {
-    return { hasError: true, error };
+    return { hasError: true, error }
   }
 
   componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-    console.error('Error caught by boundary:', error, errorInfo);
+    console.error('Error caught by boundary:', error, errorInfo)
 
     // 发送到错误监控服务
     if (window.Sentry) {
-      window.Sentry.captureException(error, { extra: errorInfo });
+      window.Sentry.captureException(error, { extra: errorInfo })
     }
   }
 
   render() {
     if (this.state.hasError) {
-      return this.props.fallback || (
-        <div className="p-8 text-center">
-          <h2 className="text-2xl font-bold text-red-500">Something went wrong</h2>
-          <p className="text-slate-400 mt-2">{this.state.error?.message}</p>
-          <button
-            onClick={() => this.setState({ hasError: false })}
-            className="mt-4 px-4 py-2 bg-purple-600 rounded"
-          >
-            Try again
-          </button>
-        </div>
-      );
+      return (
+        this.props.fallback || (
+          <div className="p-8 text-center">
+            <h2 className="text-2xl font-bold text-red-500">Something went wrong</h2>
+            <p className="text-slate-400 mt-2">{this.state.error?.message}</p>
+            <button
+              onClick={() => this.setState({ hasError: false })}
+              className="mt-4 px-4 py-2 bg-purple-600 rounded"
+            >
+              Try again
+            </button>
+          </div>
+        )
+      )
     }
 
-    return this.props.children;
+    return this.props.children
   }
 }
 ```
@@ -1810,7 +1802,7 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
 ### 布局原则
 
 1. **响应式**: 移动优先，断点：640px, 768px, 1024px, 1280px
-2. **网格系统**: 12列网格，间距 1rem
+2. **网格系统**: 12 列网格，间距 1rem
 3. **容器**: 最大宽度 1280px，居中
 4. **间距**: 8px 基准，使用 4 的倍数
 
@@ -1927,5 +1919,5 @@ MIT License
 
 ---
 
-*文档版本: v1.0.0*
-*最后更新: 2026-01-17*
+_文档版本: v1.0.0_
+_最后更新: 2026-01-17_

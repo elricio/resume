@@ -8,16 +8,16 @@ export const COLORS = {
   primary: {
     50: '#f0f9ff',
     100: '#e0f2fe',
-    500: '#0ea5e9',    // 科技蓝
+    500: '#0ea5e9', // 科技蓝
     600: '#0284c7',
-    900: '#0c4a6e',
+    900: '#0c4a6e'
   },
 
   // 强调色 - 霓虹紫
   accent: {
     400: '#a78bfa',
     500: '#8b5cf6',
-    600: '#7c3aed',
+    600: '#7c3aed'
   },
 
   // 成功/警告/错误
@@ -37,15 +37,15 @@ export const COLORS = {
     700: '#3f3f46',
     800: '#27272a',
     900: '#18181b',
-    950: '#09090b',
+    950: '#09090b'
   },
 
   // 玻璃拟态
   glass: {
     bg: 'rgba(15, 23, 42, 0.7)',
-    border: 'rgba(148, 163, 184, 0.1)',
+    border: 'rgba(148, 163, 184, 0.1)'
   }
-} as const;
+} as const
 
 // ==================== 字体配置 ====================
 export const FONTS = {
@@ -60,29 +60,29 @@ export const FONTS = {
 
   // 大小系统
   sizes: {
-    xs: '0.75rem',      // 12px
-    sm: '0.875rem',     // 14px
-    base: '1rem',       // 16px
-    lg: '1.125rem',     // 18px
-    xl: '1.25rem',      // 20px
-    '2xl': '1.5rem',    // 24px
-    '3xl': '1.875rem',  // 30px
-    '4xl': '2.25rem',   // 36px
-    '5xl': '3rem',      // 48px
+    xs: '0.75rem', // 12px
+    sm: '0.875rem', // 14px
+    base: '1rem', // 16px
+    lg: '1.125rem', // 18px
+    xl: '1.25rem', // 20px
+    '2xl': '1.5rem', // 24px
+    '3xl': '1.875rem', // 30px
+    '4xl': '2.25rem', // 36px
+    '5xl': '3rem' // 48px
   }
-} as const;
+} as const
 
 // ==================== 间距系统 ====================
 export const SPACING = {
-  xs: '0.25rem',    // 4px
-  sm: '0.5rem',     // 8px
-  md: '1rem',       // 16px
-  lg: '1.5rem',     // 24px
-  xl: '2rem',       // 32px
-  '2xl': '3rem',    // 48px
-  '3xl': '4rem',    // 64px
-  '4xl': '6rem',    // 96px
-} as const;
+  xs: '0.25rem', // 4px
+  sm: '0.5rem', // 8px
+  md: '1rem', // 16px
+  lg: '1.5rem', // 24px
+  xl: '2rem', // 32px
+  '2xl': '3rem', // 48px
+  '3xl': '4rem', // 64px
+  '4xl': '6rem' // 96px
+} as const
 
 // ==================== 响应式断点 ====================
 export const BREAKPOINTS = {
@@ -90,8 +90,8 @@ export const BREAKPOINTS = {
   md: '768px',
   lg: '1024px',
   xl: '1280px',
-  '2xl': '1536px',
-} as const;
+  '2xl': '1536px'
+} as const
 
 // ==================== 动画配置 ====================
 export const ANIMATIONS = {
@@ -142,7 +142,7 @@ export const ANIMATIONS = {
     x: [0, -10, 10, -10, 10, 0],
     transition: { duration: 0.5 }
   }
-} as const;
+} as const
 
 // ==================== 常量配置 ====================
 export const CONFIG = {
@@ -150,15 +150,15 @@ export const CONFIG = {
   SITE: {
     title: 'Geek Resume',
     description: '现代化前端工程师简历',
-    url: 'https://resume.elricio.com',
+    url: 'https://resume.elricio.com'
   },
 
   // 性能预算 (bytes)
   PERFORMANCE_BUDGET: {
-    javascript: 200000,    // 200KB
-    css: 50000,            // 50KB
-    images: 500000,        // 500KB
-    total: 800000,         // 800KB
+    javascript: 200000, // 200KB
+    css: 50000, // 50KB
+    images: 500000, // 500KB
+    total: 800000 // 800KB
   },
 
   // Lighthouse 目标分数
@@ -166,37 +166,37 @@ export const CONFIG = {
     performance: 95,
     accessibility: 100,
     bestPractices: 100,
-    seo: 100,
+    seo: 100
   },
 
   // 交互动画
   INTERACTION: {
     hoverScale: 1.02,
     tapScale: 0.98,
-    transitionDuration: 0.2,
+    transitionDuration: 0.2
   },
 
   // 滚动配置
   SCROLL: {
-    offset: 100,  // 触发滚动动画的偏移量
-    smooth: true,
+    offset: 100, // 触发滚动动画的偏移量
+    smooth: true
   },
 
   // 图片配置
   IMAGE: {
     placeholderColor: '#18181b',
-    maxFileSize: 500000,  // 500KB
+    maxFileSize: 500000 // 500KB
   }
-} as const;
+} as const
 
 // ==================== 社交链接 ====================
 export const SOCIAL_LINKS = {
   github: 'https://github.com/elricio',
-  email: 'mailto:elrico@163.com',
+  email: 'mailto:elricli@126.com',
   linkedin: '',
   twitter: '',
-  website: 'https://elricio.github.io',
-} as const;
+  website: 'https://elricio.github.io'
+} as const
 
 // ==================== 导出配置 ====================
 export default {
@@ -206,5 +206,5 @@ export default {
   BREAKPOINTS,
   ANIMATIONS,
   CONFIG,
-  SOCIAL_LINKS,
-};
+  SOCIAL_LINKS
+}

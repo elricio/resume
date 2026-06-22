@@ -1,14 +1,14 @@
 /**
  * 个人信息数据
  */
-import type { Profile } from '@/utils/types';
+import type { Profile } from '@/utils/types'
 
 export const profile: Profile = {
   name: 'Elric',
   title: '高级前端工程师',
   avatar: '/resume/src/assets/images/avatar.svg',
   location: '北京',
-  email: 'elrico@163.com',
+  email: 'elricli@126.com',
   phone: '18810609069',
   website: 'https://elricio.github.io',
   github: 'https://github.com/elricio',
@@ -27,7 +27,7 @@ export const profile: Profile = {
     },
     {
       platform: 'Email',
-      url: 'mailto:elrico@163.com',
+      url: 'mailto:elricli@126.com',
       icon: 'mail'
     },
     {
@@ -36,14 +36,14 @@ export const profile: Profile = {
       icon: 'globe'
     }
   ]
-};
+}
 
 export const contactInfo = {
   email: profile.email,
   phone: profile.phone,
   location: profile.location,
   website: profile.website,
-  github: profile.github,
-};
+  github: profile.github
+}
 
-export default profile;
+export default profile
